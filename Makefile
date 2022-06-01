@@ -1,22 +1,8 @@
-.PHONY: examples
-
-CC = xelatex
-EXAMPLES_DIR = examples
-RESUME_DIR = examples/resume
-CV_DIR = examples/cv
-RESUME_SRCS = $(shell find $(RESUME_DIR) -name '*.tex')
-CV_SRCS = $(shell find $(CV_DIR) -name '*.tex')
-
-examples: $(foreach x, coverletter cv resume, $x.pdf)
-
-resume.pdf: $(EXAMPLES_DIR)/resume.tex $(RESUME_SRCS)
-	$(CC) -output-directory=$(EXAMPLES_DIR) $<
-
-cv.pdf: $(EXAMPLES_DIR)/cv.tex $(CV_SRCS)
-	$(CC) -output-directory=$(EXAMPLES_DIR) $<
-
-coverletter.pdf: $(EXAMPLES_DIR)/coverletter.tex
-	$(CC) -output-directory=$(EXAMPLES_DIR) $<
+pdf:
+	latex paul_maxwell_resume.tex
+	dvips -Ppdf -G0 paul_maxwell_resume.dvi
+	ps2pdf paul_maxwell_resume.ps
+	make clean
 
 clean:
-	rm -rf $(EXAMPLES_DIR)/*.pdf
+	rm paul_maxwell_resume.aux | rm paul_maxwell_resume.dvi | rm paul_maxwell_resume.log | rm paul_maxwell_resume.ps | rm paul_maxwell_resume.out
