@@ -42,10 +42,8 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[2]{
-  \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
-  }
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
 }
 
 % Just in case someone needs a heading that does not need to be in a list
@@ -70,7 +68,7 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
@@ -113,10 +111,8 @@
       {Ampla Technologies}{New York, NY}
       {Data Engineer}{Mar 2022 - Present}
       \resumeItemListStart
-        \resumeItem{Tensorflow}
-          {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models. Worked on APIs and performance for training models on Tensor Processing Units (TPU).}
-        \resumeItem{Apache Beam}
-          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
+        \resumeItem{TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models. Worked on APIs and performance for training models on Tensor Processing Units (TPU).}
+        \resumeItem{Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
       \resumeItemListEnd
 
     %-----------BlackRock-----------------
@@ -124,30 +120,30 @@
       {BlackRock}{New York, NY}
       {Associate Software Engineer - Aladdin Product Group, New York, NY}{Jan 2021 - Mar 2022}
       \resumeItemListStart
-        \resumeItem{}{Engineering the next generation of portfolio construction tools through a highly scalable distributed system capable of tolerating 100x the load of the previous system by using a map-reduce process.}
-        \resumeItem{}{Led the design and implementation of a service using gRPC and requiring the coordination of multiple teams.}
-        \resumeItem{}{Architected a service to track and compare important metrics from different products and led a team of three interns in the development of the server and the client.}
-        \resumeItem{}{Developed a Python tool to compare prime and beta releases for differences in the data they serve.}
+        \resumeItem{Engineering the next generation of portfolio construction tools through a highly scalable distributed system capable of tolerating 100x the load of the previous system by using a map-reduce process.}
+        \resumeItem{Led the design and implementation of a service using gRPC and requiring the coordination of multiple teams.}
+        \resumeItem{Architected a service to track and compare important metrics from different products and led a team of three interns in the development of the server and the client.}
+        \resumeItem{Developed a Python tool to compare prime and beta releases for differences in the data they serve.}
       \resumeItemListEnd
       \resumeSubSubheading
       {Analyst Software Engineer - Aladdin Product Group, New York, NY}{Sep 2020 - Dec 2020}
       \resumeItemListStart
-        \resumeItem{}{Designed and built a load testing tool for a server-based portfolio construction service using Locust.}
-        \resumeItem{}{Enhanced a distributed process to optimize the frequency at which cached composite benchmarks are refreshed.}
+        \resumeItem{Designed and built a load testing tool for a server-based portfolio construction service using Locust.}
+        \resumeItem{Enhanced a distributed process to optimize the frequency at which cached composite benchmarks are refreshed.}
       \resumeItemListEnd
       \resumeSubSubheading
       {Rotational Analyst Software Engineer - Aladdin Product Group, San Francisco, CA}{Jul 2018 - Aug 2020}
       \resumeItemListStart
-        \resumeItem{}{Rotated through four teams involved in software and data engineering topics.}
-        \resumeItem{}{Implemented alpha signals for quantitative active equity researchers in Python using Pandas and NumPy.}
-        \resumeItem{}{Enhanced a multi-asset portfolio construction tool by implementing dynamic benchmarking and allowing for fixed or floating weights to be assigned to indices and model assets, along with nested indices.}
-        \resumeItem{}{Developed an automated testing framework for the systematic active equity engineering team to ensure signal fidelity.}
-        \resumeItem{}{Created a Python library for systematic fixed income researchers to enable easy access to more natural language processing analytics using Apache Spark while delivering runtime performance improvements of 15-20\%.}
+        \resumeItem{Rotated through four teams involved in software and data engineering topics.}
+        \resumeItem{Implemented alpha signals for quantitative active equity researchers in Python using Pandas and NumPy.}
+        \resumeItem{Enhanced a multi-asset portfolio construction tool by implementing dynamic benchmarking and allowing for fixed or floating weights to be assigned to indices and model assets, along with nested indices.}
+        \resumeItem{Developed an automated testing framework for the systematic active equity engineering team to ensure signal fidelity.}
+        \resumeItem{Created a Python library for systematic fixed income researchers to enable easy access to more natural language processing analytics using Apache Spark while delivering runtime performance improvements of 15-20\%.}
       \resumeItemListEnd
       \resumeSubSubheading
       {Summer Analyst Software Engineer - Aladdin Product Group, San Francisco, CA}{Summer 2017}
       \resumeItemListStart
-        \resumeItem{}{Designed and built a service to help portfolio managers and developers query index projection errors}
+        \resumeItem{Designed and built a service to help portfolio managers and developers query index projection errors}
       \resumeItemListEnd
 
     %-----------Workday-----------------
@@ -155,8 +151,7 @@
       {Workday}{Pleasanton, CA}
       {Software Engineering Intern}{Summer 2016}
       \resumeItemListStart
-        \resumeItem{}
-          {Redesigned the auto-generation of business process model definitions resulting in a streamlined user experience.}
+        \resumeItem{Redesigned the auto-generation of business process model definitions resulting in a streamlined user experience.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
