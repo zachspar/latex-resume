@@ -1,0 +1,20 @@
+name: Publish resume PDF
+on:
+  push:
+    tags:
+      - "v*.*.*"
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: paul_maxwell_resume.tex
+      - name: Release
+        uses: actions/upload-artifact@v2
+        with:
+          name: PDF
+          path: paul_maxwell_resume.pdf
