@@ -8,6 +8,7 @@
 *.out
 *.toc
 .vscode
+*.pdf
 
 ## Intermediate documents:
 *.dvi
