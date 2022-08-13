@@ -1,4 +1,4 @@
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -80,13 +80,13 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
-%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://sourabhbajaj.com/}{\Large Paul Maxwell}} & \href{mailto:maxwellpaulm@gmail.com}{maxwellpaulm@gmail.com}\\
+  \textbf{\href{https://maxwellpaulm.github.io/}{\Large Paul Maxwell}} & \href{mailto:maxwellpaulm@gmail.com}{maxwellpaulm@gmail.com}\\
   & (415) 944-0822 \\
 \end{tabular*}
 
@@ -108,6 +108,7 @@
 \section{Experience}
   \resumeSubHeadingListStart
 
+    %-----------Ampla-----------------
     \resumeSubheading
       {Ampla Technologies}{New York, NY}
       {Data Engineer}{Mar 2022 - Present}
@@ -117,57 +118,79 @@
         \resumeItem{Apache Beam}
           {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
       \resumeItemListEnd
-      
-% --------Multiple Positions Heading------------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
 
+    %-----------BlackRock-----------------
     \resumeSubheading
       {BlackRock}{New York, NY}
       {Associate Software Engineer - Aladdin Product Group, New York, NY}{Jan 2021 - Mar 2022}
       \resumeItemListStart
-        \resumeItem{Notifications}
-          {Hello Service for sending email, push and in-app notifications. Involved in features such as delivery time optimization, tracking, queuing and A/B testing. Built an internal app to run batch campaigns for marketing etc.}
-        \resumeItem{Nostos}
-          {Bulk data processing and injection service from Hadoop to Cassandra and provides a thin REST layer on top for serving offline computed data online.}
+        \resumeItem{}{Engineering the next generation of portfolio construction tools through a highly scalable distributed system capable of tolerating 100x the load of the previous system by using a map-reduce process.}
+        \resumeItem{}{Led the design and implementation of a service using gRPC and requiring the coordination of multiple teams.}
+        \resumeItem{}{Architected a service to track and compare important metrics from different products and led a team of three interns in the development of the server and the client.}
+        \resumeItem{}{Developed a Python tool to compare prime and beta releases for differences in the data they serve.}
       \resumeItemListEnd
-	{Analyst Software Engineer - Aladdin Product Group, New York, NY}{Sep 2020 - Dec 2020}
-    \resumeSubheading
-      {Workday}{Pleasanton, CA}
-      {Software Engineering Intern}{Summer 2012}
+      \resumeSubSubheading
+      {Analyst Software Engineer - Aladdin Product Group, New York, NY}{Sep 2020 - Dec 2020}
       \resumeItemListStart
-        \resumeItem{Portfolio Management}
-          {Created models for portfolio hedging,  portfolio optimization and price forecasting. Also creating a strategy backtesting engine used for simulating and backtesting strategies.}
-        \resumeItem{QuantDesk}
-          {Python backend for a web application used by hedge fund managers for portfolio management.}
+        \resumeItem{}{Designed and built a load testing tool for a server-based portfolio construction service using Locust.}
+        \resumeItem{}{Enhanced a distributed process to optimize the frequency at which cached composite benchmarks are refreshed.}
+      \resumeItemListEnd
+      \resumeSubSubheading
+      {Rotational Analyst Software Engineer - Aladdin Product Group, San Francisco, CA}{Jul 2018 - Aug 2020}
+      \resumeItemListStart
+        \resumeItem{}{Rotated through four teams involved in software and data engineering topics.}
+        \resumeItem{}{Implemented alpha signals for quantitative active equity researchers in Python using Pandas and NumPy.}
+        \resumeItem{}{Enhanced a multi-asset portfolio construction tool by implementing dynamic benchmarking and allowing for fixed or floating weights to be assigned to indices and model assets, along with nested indices.}
+        \resumeItem{}{Developed an automated testing framework for the systematic active equity engineering team to ensure signal fidelity.}
+        \resumeItem{}{Created a Python library for systematic fixed income researchers to enable easy access to more natural language processing analytics using Apache Spark while delivering runtime performance improvements of 15-20\%.}
+      \resumeItemListEnd
+      \resumeSubSubheading
+      {Summer Analyst Software Engineer - Aladdin Product Group, San Francisco, CA}{Summer 2017}
+      \resumeItemListStart
+        \resumeItem{}{Designed and built a service to help portfolio managers and developers query index projection errors}
       \resumeItemListEnd
 
+    %-----------Workday-----------------
+    \resumeSubheading
+      {Workday}{Pleasanton, CA}
+      {Software Engineering Intern}{Summer 2016}
+      \resumeItemListStart
+        \resumeItem{}
+          {Redesigned the auto-generation of business process model definitions resulting in a streamlined user experience.}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{QuantSoftware Toolkit}
-      {Open source python library for financial data analysis and machine learning for finance.}
+    \resumeSubItem{TBD}{TBD}
   \resumeSubHeadingListEnd
+
 
 %--------PROGRAMMING SKILLS------------
 \section{Programming Skills}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Languages}{: Python, Java, C++, C, Scala, R, Typescript}
+     \textbf{Languages: }{Python, Java, C++, C, Scala, R, Typescript}
      \hfill
-     \textbf{Technologies}{: Docker, Kubernetes, Apache Airflow, GCS, BigQuery, DBT, Apache Spark, Angular, Postgres}
+     \textbf{Technologies: }{Docker, Kubernetes, Apache Airflow, GCS, BigQuery, DBT, Apache Spark, Angular, Postgres}
    }
  \resumeSubHeadingListEnd
 
+%--------CREDENTIALS------------
+\section{Credentials}
+\resumeSubHeadingListStart
+\resumeSubheading
+    {Harvard Business School Online}{Cambridge, MA}
+    {CORe Credential of Rediness, Pass with High Honors}{Jun 2018}
+\resumeSubheading
+  {Chartered Financial Analyst (CFA) Charterholder}{}
+  {}{}
+\resumeSubheading
+  {Associate of the Society of Actuaries (Candidate)}{}
+  {Financial Mathematics, Investment and Financial Markets, Probability, Statistics for Risk Modeling}{}
+\resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
