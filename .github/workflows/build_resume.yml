@@ -1,5 +1,8 @@
 name: Build resume
-on: [push]
+on:
+  push:
+    tags-ignore:
+      - '**'
 jobs:
   build_latex:
     runs-on: ubuntu-latest

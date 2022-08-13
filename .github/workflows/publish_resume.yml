@@ -1,4 +1,4 @@
-name: Publish resume PDF
+name: Publish resume
 on:
   push:
     tags:
@@ -16,5 +16,9 @@ jobs:
       - name: Release
         uses: actions/upload-artifact@v2
         with:
-          name: PDF
+          name: Resume PDF
           path: paul_maxwell_resume.pdf
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: paul_maxwell_resume.pdf
