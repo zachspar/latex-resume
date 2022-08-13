@@ -14,11 +14,6 @@ jobs:
         with:
           root_file: paul_maxwell_resume.tex
       - name: Release
-        uses: actions/upload-artifact@v2
-        with:
-          name: Resume PDF
-          path: paul_maxwell_resume.pdf
-      - name: Release
         uses: softprops/action-gh-release@v1
         with:
           files: paul_maxwell_resume.pdf
