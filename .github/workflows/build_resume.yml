@@ -1,4 +1,4 @@
-name: Build resume
+name: Build Resume
 on: [pull_request]
 jobs:
   build_latex:

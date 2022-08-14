@@ -1,4 +1,4 @@
-name: Publish resume
+name: Publish Resume
 on:
   push:
     tags:
