@@ -1,5 +1,7 @@
 \documentclass[letterpaper,10pt]{article}
 
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -57,14 +59,14 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textbf{#1}, \small{#2} & \small{#3} \\
+      \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubSubheading}[2]{
+\newcommand{\resumeSubSubheading}[1]{
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+      \textit{\small#1}\\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -84,8 +86,8 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://maxwellpaulm.github.io/}{\Large Paul Maxwell}} & \href{mailto:maxwellpaulm@gmail.com}{maxwellpaulm@gmail.com}\\
-  & (415) 944-0822 \\
+  \textbf{\href{https://maxwellpaulm.github.io/}{\Large Paul Maxwell}} & \href{mailto:maxwellpaulm@gmail.com}{\small maxwellpaulm@gmail.com}\\
+  \small{59 West 74th Street, Apt. 2B, New York, NY 10023} & \small {(415) 944-0822}
 \end{tabular*}
 
 
@@ -93,12 +95,11 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Georgia Institute of Technology}{Atlanta, GA}
-      {Master of Science in Computer Science; GPA: 4.00}{Aug 2021 -- Present}
+      {Georgia Institute of Technology, College of Computing}{Atlanta, GA}{Aug 2021 -- Aug 2023}
+      {Master of Science in Computer Science; GPA: 4.0}
     \resumeSubheading
-      {University of Michigan, College of Engineering}{Ann Arbor, MI}
-      {Bachelor of Science in Engineering in Computer Science, Minor in Mathematics}{Aug 2014 -- Apr 2018}
-      {Graduated cum laude, Dean's List (Dec 2017, Apr 2018); GPA: 3.375/4.0}
+      {University of Michigan, College of Engineering}{Ann Arbor, MI}{Aug 2014 -- Apr 2018}
+      {Bachelor of Science in Engineering in Computer Science, Minor in Mathematics; GPA: 3.375}
   \resumeSubHeadingListEnd
 
 
@@ -108,31 +109,32 @@
 
     %-----------Ampla-----------------
     \resumeSubheading
-      {Ampla Technologies}{New York, NY}
-      {Data Engineer}{Mar 2022 - Present}
+      {Ampla Technologies}{New York, NY}{Mar 2022 - Present}
+      {Data Engineer}
       \resumeItemListStart
-        \resumeItem{TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models. Worked on APIs and performance for training models on Tensor Processing Units (TPU).}
-        \resumeItem{Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
+        \resumeItem{Working as an engineer at a fin-tech series-A startup, where I partner with the risk team to automate processes, ingest financial data, and generate insightful metrics into small businesses.}
+        \resumeItem{Architected an automated underwriting process for brands to apply for funding along with a senior data scientist.}
+        \resumeItem{Improved and rewrote a core banking data integration to run 25x faster than the original while using less than 1\% of the original compute resources.}
       \resumeItemListEnd
 
     %-----------BlackRock-----------------
     \resumeSubheading
-      {BlackRock}{New York, NY}
-      {Associate Software Engineer - Aladdin Product Group, New York, NY}{Jan 2021 - Mar 2022}
+      {BlackRock}{New York, NY}{Summer 2017; Jul 2018 -- Mar 2022}
+      {Associate Software Engineer, New York, NY (Jan 2021 - Mar 2022)}
       \resumeItemListStart
-        \resumeItem{Engineering the next generation of portfolio construction tools through a highly scalable distributed system capable of tolerating 100x the load of the previous system by using a map-reduce process.}
+        \resumeItem{Engineered the next generation of portfolio construction tools through a highly scalable distributed system capable of tolerating 100x the load of the previous system by using a map-reduce process.}
         \resumeItem{Led the design and implementation of a service using gRPC and requiring the coordination of multiple teams.}
         \resumeItem{Architected a service to track and compare important metrics from different products and led a team of three interns in the development of the server and the client.}
         \resumeItem{Developed a Python tool to compare prime and beta releases for differences in the data they serve.}
       \resumeItemListEnd
       \resumeSubSubheading
-      {Analyst Software Engineer - Aladdin Product Group, New York, NY}{Sep 2020 - Dec 2020}
+      {Analyst Software Engineer, New York, NY (Sep 2020 - Dec 2020)}
       \resumeItemListStart
         \resumeItem{Designed and built a load testing tool for a server-based portfolio construction service using Locust.}
         \resumeItem{Enhanced a distributed process to optimize the frequency at which cached composite benchmarks are refreshed.}
       \resumeItemListEnd
       \resumeSubSubheading
-      {Rotational Analyst Software Engineer - Aladdin Product Group, San Francisco, CA}{Jul 2018 - Aug 2020}
+      {Rotational Analyst Software Engineer, San Francisco, CA (Jul 2018 - Aug 2020)}
       \resumeItemListStart
         \resumeItem{Rotated through four teams involved in software and data engineering topics.}
         \resumeItem{Implemented alpha signals for quantitative active equity researchers in Python using Pandas and NumPy.}
@@ -141,15 +143,15 @@
         \resumeItem{Created a Python library for systematic fixed income researchers to enable easy access to more natural language processing analytics using Apache Spark while delivering runtime performance improvements of 15-20\%.}
       \resumeItemListEnd
       \resumeSubSubheading
-      {Summer Analyst Software Engineer - Aladdin Product Group, San Francisco, CA}{Summer 2017}
+      {Summer Analyst Software Engineer, San Francisco, CA (Summer 2017)}
       \resumeItemListStart
         \resumeItem{Designed and built a service to help portfolio managers and developers query index projection errors}
       \resumeItemListEnd
 
     %-----------Workday-----------------
     \resumeSubheading
-      {Workday}{Pleasanton, CA}
-      {Software Engineering Intern}{Summer 2016}
+      {Workday}{Pleasanton, CA}{Summer 2016}
+      {Software Engineering Intern}
       \resumeItemListStart
         \resumeItem{Redesigned the auto-generation of business process model definitions resulting in a streamlined user experience.}
       \resumeItemListEnd
@@ -159,32 +161,42 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{TBD}{TBD}
+    \resumeSubItem{TBD}{\href{https://github.com/maxwellpaulm}{\small GitHub: maxwellpaulm}}
   \resumeSubHeadingListEnd
 
 
 %--------PROGRAMMING SKILLS------------
 \section{Programming Skills}
  \resumeSubHeadingListStart
-   \item{
-     \textbf{Languages: }{Python, Java, C++, C, Scala, R, Typescript}
-     \hfill
-     \textbf{Technologies: }{Docker, Kubernetes, Apache Airflow, GCS, BigQuery, DBT, Apache Spark, Angular, Postgres}
-   }
+    \item{\textbf{Languages: }{Python, Java, C++, C, Scala, R, Typescript}}
+    \item{\textbf{Technologies: }{Docker, Kubernetes, Apache Airflow, GCS, BigQuery, DBT, Apache Spark, Angular, Postgres}}
  \resumeSubHeadingListEnd
 
-%--------CREDENTIALS------------
-\section{Credentials}
+% %--------CREDENTIALS------------
+% \section{Credentials}
+% \resumeSubHeadingListStart
+% \resumeSubheading
+%     {Harvard Business School Online}{Cambridge, MA}
+%     {CORe Credential of Rediness, Pass with High Honors}{Jun 2018}
+% \resumeSubheading
+%   {Chartered Financial Analyst (CFA) Charterholder}{}
+%   {}{}
+% \resumeSubheading
+%   {Associate of the Society of Actuaries (Candidate)}{}
+%   {Financial Mathematics, Investment and Financial Markets, Probability, Statistics for Risk Modeling}{}
+% \resumeSubHeadingListEnd
+
+
+%--------LEADERSHIP------------
+\section{Leadership}
 \resumeSubHeadingListStart
 \resumeSubheading
-    {Harvard Business School Online}{Cambridge, MA}
-    {CORe Credential of Rediness, Pass with High Honors}{Jun 2018}
-\resumeSubheading
-  {Chartered Financial Analyst (CFA) Charterholder}{}
-  {}{}
-\resumeSubheading
-  {Associate of the Society of Actuaries (Candidate)}{}
-  {Financial Mathematics, Investment and Financial Markets, Probability, Statistics for Risk Modeling}{}
+    {Theta Chi Fraternity, University of Michigan}{Ann Arbor, MI}{Sep 2014 - Apr 2018}
+    {President of Alpha Gamma Chapter (Sep 2015 - Sep 2016)}
+    \resumeItemListStart
+      \resumeItem{Managed a chapter with over 90 men, acted as the lead correspondent with the alumni board and national fraternity responsible for building and maintaining working relationships and aligning chapter values.}
+      \resumeItem{Directed the chapter's Executive Committee as President, led discussions and votes on internal decisions governing chapter members and appointed a risk manager to the committee to help ensure safety and responsibility.}
+    \resumeItemListEnd
 \resumeSubHeadingListEnd
 
 %-------------------------------------------
