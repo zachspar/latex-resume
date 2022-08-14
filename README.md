@@ -1,5 +1,6 @@
 # Paul's LaTex Resume
 ![Publish Resume](https://github.com/maxwellpaulm/resume/actions/workflows/publish_resume.yml/badge.svg)
+[Latest Resume Download](https://github.com/maxwellpaulm/resume/releases/latest/download/paul_maxwell_resume.pdf)
 
 ## Building the PDF
 1. Install [LaTex](https://www.latex-project.org/get/)
