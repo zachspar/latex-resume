@@ -1,8 +1,8 @@
 pdf:
-	latex paul_maxwell_resume.tex
-	dvips -Ppdf -G0 paul_maxwell_resume.dvi
-	ps2pdf paul_maxwell_resume.ps
+	latex zachary_spar_resume.tex
+	dvips -Ppdf -G0 zachary_spar_resume.dvi
+	ps2pdf zachary_spar_resume.ps
 	make clean
 
 clean:
-	rm paul_maxwell_resume.aux | rm paul_maxwell_resume.dvi | rm paul_maxwell_resume.log | rm paul_maxwell_resume.ps | rm paul_maxwell_resume.out
+	rm zachary_spar_resume.aux | rm zachary_spar_resume.dvi | rm zachary_spar_resume.log | rm zachary_spar_resume.ps | rm zachary_spar_resume.out
