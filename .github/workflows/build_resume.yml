@@ -9,4 +9,4 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: paul_maxwell_resume.tex
+          root_file: zachary_spar_resume.tex
